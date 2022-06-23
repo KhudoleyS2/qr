@@ -7,6 +7,6 @@ app.use(express.static(__dirname+'/public'));
 app.use(router)
 
 
-app.listen(3001, () => {
-  console.log('Server is running on port http://localhost:3001');
+app.listen(process.env.PORT, () => {
+  console.log(`Server is running on port http://localhost:${process.env.PORT}`);
 });
